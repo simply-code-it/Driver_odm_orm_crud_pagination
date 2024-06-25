@@ -1,0 +1,40 @@
+GET http://localhost:3000/todos 
+
+###
+
+POST http://localhost:3000/todos 
+Content-Type: application/json 
+
+{
+    "title": "master js",
+    "status": "pending",
+    "desc": "be the only master of that area in this world"
+}
+
+###
+
+PUT http://localhost:3000/todos/667a94cb33a0ab4a6b27d0c6
+Content-Type: application/json 
+
+{
+    "title": "find one subject",
+    "status": "pending",
+    "desc": "be the only master of that area in this world"
+}
+
+###
+PUT http://localhost:3000/todos/667a94cb33a0ab4a6b27d0c6
+Content-Type: application/json 
+
+{
+    "status": "working"
+}
+
+###
+
+DELETE http://localhost:3000/todos/667a94cb33a0ab4a6b27d0c6
+
+###
+
+GET http://localhost:3000/paginated?page=1&limit=10
+

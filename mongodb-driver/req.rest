@@ -1,0 +1,33 @@
+GET http://localhost:3000/todos 
+
+###
+
+POST http://localhost:3000/todos 
+Content-Type: application/json
+
+{
+"title":"Node js",
+"status": "pending"
+}
+
+###
+
+PUT http://localhost:3000/todos/667a89061099515fe801e88f
+Content-Type: application/json
+
+{
+"title":"Node js2",
+"status": "pending"
+}
+
+###
+DELETE http://localhost:3000/todos/667a896fe294cdd6a0f0d5b9 
+
+### 
+PATCH http://localhost:3000/todos/667a89061099515fe801e88f
+Content-Type: application/json 
+
+{
+    "title": "Nextjs2",
+    "status": "done"
+}

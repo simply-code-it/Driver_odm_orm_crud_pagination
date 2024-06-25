@@ -1,0 +1,41 @@
+GET http://localhost:3000/todos
+
+###
+
+POST http://localhost:3000/todos 
+Content-Type: application/json
+
+{
+    "title": "Master JavaScript",
+    "status": "pending",
+    "description": "You need to practice 5 problems daily"
+}
+
+###
+
+PUT http://localhost:3000/todos/4
+Content-Type: application/json
+
+{
+    "title": "Master Nextjs",
+    "status": "pending",
+    "description": "You need to practice 5 problems daily"
+}
+
+###
+
+PATCH http://localhost:3000/todos/4
+Content-Type: application/json
+
+{
+    "status": "done"
+}
+
+### 
+
+DELETE http://localhost:3000/todos/2
+
+
+###
+
+GET http://localhost:3000/paginated?page=1&limit=4
